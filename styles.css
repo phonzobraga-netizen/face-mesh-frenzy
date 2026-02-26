@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+#cameraFeed,
+#outputCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cameraFeed {
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+#outputCanvas {
+  pointer-events: none;
+}
